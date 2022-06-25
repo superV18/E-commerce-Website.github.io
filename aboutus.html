@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Cart | E-COMMERCE WEBSITE BY VISHAL GARG </title>
+    <link rel="stylesheet" href="css/aboutus.css">
+    <!-- favicon -->
+    <link rel="icon" href="img/VLogo_circle.png" type="image/gif" sizes="16x16">
+    <!-- header links -->
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- HEADER -->
+    <div id="1"></div>
+    <script>
+        load("header.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+    <br>
+    <br>
+    <section>
+        <div class="aboutus">
+          <h1 class="abth">About us</h1>
+          <p class="abtc"> MYSHOP is used to shop the fashion items and the gadgets item fore the men and women.<br/>
+            <bold> Order the items now !!</bold>
+          </p>
+          <div class="contact">
+            <a href="https://www.facebook.com/" class="fb" target="_blank" ><img src="img/fbicon.png" width="50px" height="50px"></a>
+            <a href="https://www.instagram.com/accounts/login/" class="insta" target="_blank"><img src="img/insta.png" width="50px" height="50px"></a>
+            <a href="https://www.mail.com/int/" class="mail" target="_blank"><img src="img/mail.jpg" width="57px" height="45px"></a>
+            <a href="https://www.whatsapp.com/" class="wh" target="_blank"><img src="img/wh.png" width="50px" height="50px"></a>
+            <span class="number">+917252863307</span>
+          </div>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14037.928346519277!2d78.09822317935162!3d28.404706870129736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390b5b49c4bf6f7f%3A0xb520fabbc6291557!2sJahangirabad%2C%20Uttar%20Pradesh%20203394!5e0!3m2!1sen!2sin!4v1656090548322!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           <h1 class="fnote">Website Developer Name: Vishal Garg</h1>
+        </div>
+      </section>
+      <!-- FOOTER -->
+    <div id="4"></div>
+    <script>
+        load("footer.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(4).innerHTML = req.responseText;
+        }
+    </script>
+</body>
+</html>

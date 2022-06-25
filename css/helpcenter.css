@@ -1,0 +1,83 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+
+  width: 100%;
+  height: 100vh;
+}
+.help_header .heading1 {
+  font-size: 40px;
+  text-align: start;
+  margin: 5px 0px 5px 15px;
+}
+.help_header,
+.sidebar,
+.question {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: rgb(239 250 251);
+  margin: 30px;
+  padding: 35px;
+  padding: 10px;
+}
+.help_content {
+  text-align: start;
+  font-size: 20px;
+  padding: 15px;
+  color: rgb(78, 72, 72);
+}
+.sidebar {
+  margin: 10px 10px 10px 30px;
+  padding: 15px;
+  text-align: start;
+  width: 25%;
+  float: left;
+}
+.subHeading p {
+  border-bottom: 1px solid #ccc;
+  font-size: 30px;
+  text-align: center;
+  margin: 10px;
+  font-weight: 500;
+}
+.sidebar div ul li,
+.qna {
+  padding: 10px;
+  margin: 5px;
+  text-align: start;
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.sidebar div ul li:hover,
+.qna:hover {
+  background-color: rgb(214, 224, 239);
+  color: blue;
+}
+
+.question {
+  float: right;
+  width: 64%;
+  margin-top: 10px;
+}
+.question .mainQna {
+  font-size: 35px;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.qna {
+  font-size: 25px;
+}
+.subQna {
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+  font-size: 15px;
+  margin-left: 15px;
+}
