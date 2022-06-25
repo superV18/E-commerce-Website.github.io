@@ -156,10 +156,6 @@ body
         display: grid;
         grid-template-columns: 1fr 2fr 0.5fr;
     }
-    #search
-    {
-        display: none;
-    }
 }
 @media(max-width: 750px)
 {
