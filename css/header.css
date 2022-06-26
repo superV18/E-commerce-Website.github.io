@@ -59,7 +59,7 @@ body
     color: white;
     font-weight: bold;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 #collection a
 {
@@ -166,6 +166,7 @@ body
     #collection
     {
         font-size: 12px;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     .userIcon
     {
@@ -188,7 +189,7 @@ body
     #collection
     {
         font-size: 10px;
-        grid-template-columns: 1fr 1fr 1fr;
+        
     }
     .userIcon
     {

@@ -1,0 +1,44 @@
+.contact{
+    width:40%;
+    text-align:left;
+    border: solid lightgrey;
+    padding: 2%;
+    margin: 2%;
+    position: relative;
+    left:25%;
+    right: 25%;
+}
+.faq{
+    border-bottom: solid lightgrey 2px;
+    font-family: 'Lato', sans-serif;
+}
+
+.question {
+    cursor: pointer;
+    color: black;
+    padding: 10px 10px 10px 0;
+    text-align: left;
+    font-size: 17px;
+    transition: 0.4s;
+  }
+  
+  .active, .question:hover {
+    font-weight: bold;
+  }
+
+  .question i{
+    float: right;
+    font-size: 30px;
+    color:rgb(19, 120, 163);
+  }
+  
+  .answer {
+    padding: 0;
+    font-size: 17px;
+    color: rgb(58, 51, 51);
+    margin: 5px 5px 15px 0;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }

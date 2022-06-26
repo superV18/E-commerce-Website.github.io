@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Cart | E-COMMERCE WEBSITE BY VISHAL GARG </title>
+    <link rel="stylesheet" href="css/contact.css">
+    <!-- favicon -->
+    <link rel="icon" href="img/VLogo_circle.png" type="image/gif" sizes="16x16">
+    <!-- header links -->
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- HEADER -->
+    <div id="1"></div>
+    <script>
+        load("header.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section>
+        <div class="contact">
+            <h1 class="faqheader">Frequently Asked Questions</h1>
+            <div class="faq">
+                <div class="question"> How can I place a order on MYSHOP website <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                <div class="answer"> 
+                    You can click on any product which you want. It will redirect it to product detail page. There you will see a button named "Add to Cart". You can click the same and then go to the cart by clicking on cart icon available in header.
+                    In cart, you will see all your added items. You can click on Place Order button to place the order.
+                </div>
+            </div>
+            <div class="faq">
+                <div class="question">How can I search the specific item? <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                <div class="answer"> You can go to the Search tab given in header. There, in the input you can add the keyword you want to search and then either click on search icon or press the enter. You will get all the results corresponding to your keyword.</div>
+            </div>
+            <div class="faq">
+                <div class="question"> Whom Should I connect if i face any problem with the site? <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                <div class="answer"> You can drop a mail to site owner - <b>Vishal Garg</b> on his email id (gargv6444@gmail.com). He will look into the soon and get back to you with resolution.</div>
+            </div>
+            <div class="faq">
+                <div class="question"> How can I see only Fashion related products? <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                <div class="answer"> You can go to the Fashion tab given in header. It will take you page where products belongs to Fashion category will be shown.</div>
+            </div>
+            <div class="faq">
+                <div class="question"> How can I see only Fashion related products? <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                <div class="answer">You can go to the Gadgets tab given in header. It will take you page where products belongs to Gadgets category will be shown.</div>
+            </div>
+            <div class="faq">
+                <div class="question"> From where I can get the more information about the company? <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                <div class="answer">You can go to the About Us tab given in header. It will take you page where you can read about the company details, address and contact details.</div>
+            </div>
+        </div>
+      </section>
+      <script>
+        var questions = document.getElementsByClassName("question");
+        var i;
+        
+        for (i = 0; i < questions.length; i++) {
+            questions[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var answer = this.nextElementSibling;
+            if (answer.style.maxHeight) {
+                answer.style.maxHeight = null;
+                Array.from(this.children)[0].classList.remove("fa-angle-up"); 
+                Array.from(this.children)[0].classList.add("fa-angle-down"); 
+            } else {
+                answer.style.maxHeight = answer.scrollHeight + "px";
+                Array.from(this.children)[0].classList.remove("fa-angle-down");
+                Array.from(this.children)[0].classList.add("fa-angle-up")
+            } 
+          });
+        }
+        </script>
+      <!-- FOOTER -->
+    <div id="4"></div>
+    <script>
+        load("footer.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(4).innerHTML = req.responseText;
+        }
+    </script>
+</body>
+</html>
